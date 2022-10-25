@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CourseWork1</string>
+
+    <string-array name="RisksAssessment">
+        <item>Yes </item>
+        <item>No </item>
+    </string-array>
+
+    <string-array name="select">
+        <item>Travel </item>
+        <item>Food </item>
+        <item>Transport </item>
+
+    </string-array>
+
+
+</resources>

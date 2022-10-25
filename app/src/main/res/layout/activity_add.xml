@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:text="Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/destination_text"
+        android:layout_width="109dp"
+        android:layout_height="30dp"
+        android:text="Destination"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_input"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="173dp"
+        android:layout_height="32dp"
+        android:text="Date of the Trip"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/destination_input"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/risks_text"
+        android:layout_width="287dp"
+        android:layout_height="32dp"
+        android:text="Require Risks Assessment"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_input"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="220dp"
+        android:layout_height="27dp"
+        android:text="Description"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="347dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Name Input"
+        android:inputType="textPersonName"
+        android:background="@drawable/goctron_edit"
+        android:textColorHighlight="#7cff88"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_text"
+        app:layout_constraintVertical_bias="0.015"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/destination_input"
+        android:layout_width="347dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Destination Input"
+        android:inputType="textPersonName"
+        android:background="@drawable/goctron_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/destination_text"
+        app:layout_constraintVertical_bias="0.021"
+        tools:ignore="TouchTargetSizeCheck"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/date_input"
+        android:layout_width="344dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Enter Date"
+        android:background="@drawable/goctron_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_text"
+        app:layout_constraintVertical_bias="0.02"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        android:importantForAutofill="no"
+        />
+    <!--android:onClick="showDatePickerDialog"-->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="345dp"
+        android:layout_height="62dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/risks_text"
+        app:layout_constraintVertical_bias="0.047">
+
+        <RadioButton
+            android:id="@+id/radioButton12"
+            android:layout_width="173dp"
+            android:layout_height="56dp"
+            android:text="Yes"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/radioButton13"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="No"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/description_input"
+        android:layout_width="356dp"
+        android:layout_height="92dp"
+        android:ems="10"
+        android:hint="Description Input"
+        android:inputType="textPersonName"
+        android:background="@drawable/goctron_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_text"
+        app:layout_constraintVertical_bias="0.062"
+        android:importantForAutofill="no"/>
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="357dp"
+        android:layout_height="38dp"
+        android:background="@drawable/goctron_button"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_input"
+        app:layout_constraintVertical_bias="0.504"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
