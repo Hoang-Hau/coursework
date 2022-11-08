@@ -7,14 +7,40 @@
     tools:context=".UploadActivity">
 
 
+    <Button
+        android:id="@+id/send"
+        android:layout_width="176dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="108dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="537dp"
+        android:text="Post API" />
+
     <TextView
+        android:id="@+id/responseHead"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="635dp"
         android:text="Upload"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        android:layout_centerInParent="true" />
+        android:textSize="20sp" />
 
+    <TextView
+        android:id="@+id/response"
+        android:layout_width="match_parent"
+        android:layout_height="199dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="113dp"
+
+        android:textSize="50sp"
+        android:textStyle="bold" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nevigation"
@@ -25,5 +51,15 @@
         app:itemTextColor="@drawable/selector"
         app:menu="@menu/menu_nevigation"
         android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="400dp"
+        android:layout_height="207dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="320dp"
+        android:text="TextView" />
 
 </RelativeLayout>
