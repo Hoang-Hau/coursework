@@ -37,8 +37,6 @@ public class SearchActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.idSearchView);
 
-        // calling method to
-        // build recycler view.
         buildRecyclerView();
 
 
@@ -61,15 +59,11 @@ public class SearchActivity extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(), UploadActivity.class));
                         overridePendingTransition(0,0);
                         return true;
-
-
                 }
                 return false;
             }
         });
     }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -102,29 +96,24 @@ public class SearchActivity extends AppCompatActivity {
         // creating a new array list to filter our data.
         ArrayList<SearchModel> filteredlist = new ArrayList<SearchModel>();
 
-        // running a for loop to compare elements.
         for (SearchModel item : searchModelArrayList) {
-            // checking if the entered string matched with any item of our recycler view.
+
             if (item.getSearchName().toLowerCase().contains(text.toLowerCase())) {
-                // if the item is matched we are
-                // adding it to our filtered list.
+
                 filteredlist.add(item);
             }
         }
         if (filteredlist.isEmpty()) {
-            // if no item is added in filtered list we are
-            // displaying a toast message as no data found.
+
             Toast.makeText(this, "No Data Found..", Toast.LENGTH_SHORT).show();
         } else {
-            // at last we are passing that filtered
-            // list to our adapter class.
+
             adapter.filterList(filteredlist);
         }
     }
 
     private void buildRecyclerView() {
 
-        // below line we are creating a new array list
         searchModelArrayList = new ArrayList<SearchModel>();
 
         // below line is to add data to our array list.
@@ -138,12 +127,8 @@ public class SearchActivity extends AppCompatActivity {
         LinearLayoutManager manager = new LinearLayoutManager(this);
         recyclerView.setHasFixedSize(true);
 
-        // setting layout manager
-        // to our recycler view.
         recyclerView.setLayoutManager(manager);
 
-        // setting adapter to
-        // our recycler view.
         recyclerView.setAdapter(adapter);
     }
 

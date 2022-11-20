@@ -15,6 +15,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
+import android.widget.Toast;
 
 import java.time.LocalDate;
 
@@ -62,13 +63,20 @@ public class AddExpenseActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 MyDatabaseExpense myDB = new MyDatabaseExpense(AddExpenseActivity.this);
-                myDB.addExpense(spinner.getSelectedItem().toString(),
-                        amount_input.getText().toString().trim(),
-                        expense_date_input.getText().toString().trim(), id);
 
-                Intent intent = new Intent(AddExpenseActivity.this, ExpenseActivity.class);
-                intent.putExtra("tripID", String.valueOf(id));
-                startActivity(intent);
+                if (amount_input.length()==0 ) {
+                    Toast.makeText(AddExpenseActivity.this, "You need to fill all require fields", Toast.LENGTH_SHORT).show();
+                } else if ((expense_date_input.length()==0)) {
+                    Toast.makeText(AddExpenseActivity.this, "You need to fill all require fields", Toast.LENGTH_SHORT).show();
+                } else {
+                    myDB.addExpense(spinner.getSelectedItem().toString(),
+                            amount_input.getText().toString().trim(),
+                            expense_date_input.getText().toString().trim(), id);
+
+                            Intent intent = new Intent(AddExpenseActivity.this, ExpenseActivity.class);
+                            intent.putExtra("tripID", String.valueOf(id));
+                            startActivity(intent);
+                }
 
             }
         });

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue1"
     tools:context=".AddActivity">
 
     <TextView
@@ -67,7 +68,7 @@
         android:layout_height="45dp"
         android:ems="10"
         android:hint="Enter the amount"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:background="@drawable/goctron_edit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

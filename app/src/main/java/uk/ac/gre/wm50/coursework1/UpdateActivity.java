@@ -73,19 +73,34 @@ public class UpdateActivity extends AppCompatActivity {
         update_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //And only then we call this
+
                 MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateActivity.this);
-                int riskGroup = radioGroup.getCheckedRadioButtonId();
-                RadioButton radioButton = findViewById(riskGroup);
-                name = name_input.getText().toString().trim();
-                date = date_input.getText().toString().trim();
-                destination = destination_input.getText().toString().trim();
-                risk = radioButton.getText().toString().trim();
-                description = description_input.getText().toString().trim();
-                myDB.updateData(id, name, destination, date, risk, description);
-                Intent intent = new Intent(UpdateActivity.this, MainActivity.class);
-                startActivity(intent);
-                finish();
+
+
+                if (name_input == null) {
+                    Toast.makeText(UpdateActivity.this, "You need to fill all require fields", Toast.LENGTH_SHORT).show();
+                } else if (destination_input == null) {
+                    Toast.makeText(UpdateActivity.this, "You need to fill all require fields", Toast.LENGTH_SHORT).show();
+                } else if (date_input == null) {
+                    Toast.makeText(UpdateActivity.this, "You need to fill all require fields", Toast.LENGTH_SHORT).show();
+                } else if ((radioGroup.getCheckedRadioButtonId() == -1)) {
+                    Toast.makeText(UpdateActivity.this, "You need to fill all require fields", Toast.LENGTH_SHORT).show();
+                } else if (description_input == null) {
+                    Toast.makeText(UpdateActivity.this, "You need to fill all require fields", Toast.LENGTH_SHORT).show();
+                } else {
+                    myDB.updateData(id, name_input.getText().toString().trim(),
+                            destination_input.getText().toString().trim(),
+                            date_input.getText().toString().trim(),
+                            ((RadioButton)findViewById(radioGroup.getCheckedRadioButtonId())).getText().toString(),
+                            description_input.getText().toString().trim());
+
+                    Intent intent = new Intent(UpdateActivity.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();
+
+                }
+
+
 
 
             }

@@ -6,6 +6,7 @@
         <entry key="..\:/Mobile App/CourseWork1/app/src/main/res/drawable/botron_edittext.xml" value="0.1505" />
         <entry key="..\:/Mobile App/CourseWork1/app/src/main/res/drawable/goctron_button.xml" value="0.1505" />
         <entry key="..\:/Mobile App/CourseWork1/app/src/main/res/drawable/goctron_edit.xml" value="0.1505" />
+        <entry key="..\:/Mobile App/CourseWork1/app/src/main/res/drawable/goctrontrip.xml" value="0.151" />
         <entry key="..\:/Mobile App/CourseWork1/app/src/main/res/drawable/ic_add.xml" value="0.1505" />
         <entry key="..\:/Mobile App/CourseWork1/app/src/main/res/drawable/ic_delete.xml" value="0.1675" />
         <entry key="..\:/Mobile App/CourseWork1/app/src/main/res/drawable/ic_delete1.xml" value="0.1675" />
@@ -15,7 +16,7 @@
         <entry key="..\:/Mobile App/CourseWork1/app/src/main/res/drawable/ic_upload.xml" value="0.1505" />
         <entry key="..\:/Mobile App/CourseWork1/app/src/main/res/drawable/selector.xml" value="0.133" />
         <entry key="..\:/Mobile App/CourseWork1/app/src/main/res/drawable/tron.xml" value="0.1505" />
-        <entry key="..\:/Mobile App/CourseWork1/app/src/main/res/layout/activity_add.xml" value="0.22" />
+        <entry key="..\:/Mobile App/CourseWork1/app/src/main/res/layout/activity_add.xml" value="0.25" />
         <entry key="..\:/Mobile App/CourseWork1/app/src/main/res/layout/activity_add_expense.xml" value="0.25" />
         <entry key="..\:/Mobile App/CourseWork1/app/src/main/res/layout/activity_expense.xml" value="0.22" />
         <entry key="..\:/Mobile App/CourseWork1/app/src/main/res/layout/activity_main.xml" value="0.25" />

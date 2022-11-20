@@ -97,7 +97,6 @@ class MyDatabaseHelper extends SQLiteOpenHelper {
     }
 
 
-
     void updateData(String row_id, String name, String destination, String date, String risk, String description){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();

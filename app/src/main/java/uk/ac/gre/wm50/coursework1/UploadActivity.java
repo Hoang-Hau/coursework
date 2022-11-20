@@ -132,7 +132,7 @@ public class UploadActivity extends AppCompatActivity {
     }
     private String finalJson(String json){
         return "{\n" +
-                "  \"userId\": \"gcd12\",\n" +
+                "  \"userId\": \"wm123\",\n" +
                 "  \"detailList\": [\n" +
                 json+"\n" +
                 "  ]\n" +

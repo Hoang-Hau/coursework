@@ -51,11 +51,12 @@
         android:id="@+id/bottom_nevigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         app:itemBackground="@color/blue"
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
-        app:menu="@menu/menu_nevigation"
-        android:layout_alignParentBottom="true"/>
+
+        app:menu="@menu/menu_nevigation" />
 
 
 </RelativeLayout>
