@@ -51,8 +51,6 @@ public class UploadActivity extends AppCompatActivity {
             }
         });
 
-
-
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nevigation);
 
         bottomNavigationView.setSelectedItemId(R.id.upload);

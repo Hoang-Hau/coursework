@@ -77,10 +77,8 @@ public class AddExpenseActivity extends AppCompatActivity {
                             intent.putExtra("tripID", String.valueOf(id));
                             startActivity(intent);
                 }
-
             }
         });
     }
-
 }
 

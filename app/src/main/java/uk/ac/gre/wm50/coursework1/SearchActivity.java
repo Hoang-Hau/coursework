@@ -39,8 +39,6 @@ public class SearchActivity extends AppCompatActivity {
 
         buildRecyclerView();
 
-
-
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nevigation);
 
         bottomNavigationView.setSelectedItemId(R.id.search);
@@ -132,5 +130,4 @@ public class SearchActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
     }
 
-
-    }
+}

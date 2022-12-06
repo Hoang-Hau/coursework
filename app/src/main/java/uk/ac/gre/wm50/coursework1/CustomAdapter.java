@@ -21,16 +21,10 @@ import java.util.ArrayList;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
 
-
-
-
     Context context;
     ArrayList trip_id, trip_name, trip_destination, trip_date, trip_risk, trip_description;
 
     Animation translate_anim;
-
-
-
 
     CustomAdapter(Context context,
                   ArrayList trip_id,
@@ -51,14 +45,12 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     }
 
-
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.my_row, parent,false);
         return new MyViewHolder(view);
-
     }
 
     @Override
@@ -94,7 +86,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-
         TextView trip_id_txt, trip_name_txt, trip_destination_txt, trip_date_txt, trip_risk_txt, trip_description_txt;
         LinearLayout mainLayout;
         public MyViewHolder(@NonNull View itemView) {
@@ -112,7 +103,5 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             mainLayout.setAnimation(translate_anim);
 
         }
-
     }
-
 }

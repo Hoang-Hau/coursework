@@ -56,7 +56,6 @@ public class MyDatabaseExpense extends SQLiteOpenHelper {
 
     }
 
-
     void addExpense(String type, String amount, String date, int trip_id) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();

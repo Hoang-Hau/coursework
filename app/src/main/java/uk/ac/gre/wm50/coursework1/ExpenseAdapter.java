@@ -17,15 +17,8 @@ import java.util.ArrayList;
 
 public class ExpenseAdapter extends RecyclerView.Adapter<ExpenseAdapter.MyView> {
 
-
-
-
     Context context;
     ArrayList expense_id, expense_type, expense_amount, expense_date, trip_id;
-
-
-
-
 
     ExpenseAdapter(Context context,
                   ArrayList expense_id,
@@ -58,11 +51,7 @@ public class ExpenseAdapter extends RecyclerView.Adapter<ExpenseAdapter.MyView> 
         holder.expense_amount_txt.setText(String.valueOf(expense_amount.get(position)));
         holder.expense_date_txt.setText(String.valueOf(expense_date.get(position)));
 
-
-
     }
-
-
     @Override
     public int getItemCount() {return expense_id.size();}
     public static class MyView extends RecyclerView.ViewHolder {
@@ -80,7 +69,6 @@ public class ExpenseAdapter extends RecyclerView.Adapter<ExpenseAdapter.MyView> 
 
 
         }
-
     }
 }
 
